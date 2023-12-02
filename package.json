@@ -9,7 +9,7 @@
     "use-lru-cache",
     "javascript"
   ],
-  "main": "useLRUCache",
+  "main": "useLRUCache.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
