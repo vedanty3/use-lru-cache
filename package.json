@@ -1,0 +1,33 @@
+{
+  "name": "use-lru-cache",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "lru cache",
+    "react hooks",
+    "useLRUCache",
+    "use-lru-cache",
+    "javascript"
+  ],
+  "main": "useLRUCache",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uuvedant4/use-lru-cache.git"
+  },
+  "author": "Vedant Yetekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uuvedant4/use-lru-cache/issues"
+  },
+  "homepage": "https://github.com/uuvedant4/use-lru-cache#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.40"
+  }
+}
