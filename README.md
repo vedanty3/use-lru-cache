@@ -36,11 +36,14 @@ export default MyComponent;
 
 > ***Note: Replace `someKey` and `42` with your actual data and keys. Adjust the generic type parameter <T> based on the type of data you want to store in the cache.***
 
-*Demo*: [Demo Link](https://codesandbox.io/p/sandbox/lru-cache-visualizer-rw9rz3)
+-----------------------------------------
 
-*Package Link*: [`use-lru-cache` on npm](https://www.npmjs.com/package/use-lru-cache)
+**Demo**: [CodeSandbox](https://codesandbox.io/p/sandbox/lru-cache-visualizer-rw9rz3)
+**Package Link**: [`use-lru-cache` on npm](https://www.npmjs.com/package/use-lru-cache)
 
-#### ***Contributors***:
+-----------------------------------------
+
+#### **Contributors**:
 > <a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" />
 </a>
