@@ -1,5 +1,3 @@
-- **Demo**: [Demo Link](https://codesandbox.io/p/sandbox/lru-cache-visualizer-rw9rz3)
-
 # `use-lru-cache`
 
 A React hook for managing an LRUCache (Least Recently Used Cache) in your React components.
@@ -8,11 +6,11 @@ A React hook for managing an LRUCache (Least Recently Used Cache) in your React 
 
 ```bash
 npm install use-lru-cache
+```
 
 # Usage
 
 ```markdown
-```tsx
 import React from 'react';
 import { useLRUCache } from 'use-lru-cache';
 
@@ -34,12 +32,15 @@ const MyComponent: React.FC = () => {
 };
 
 export default MyComponent;
+```
 
 
 
-#### Replace 'someKey' and 42 with your actual data and keys. Adjust the generic type parameter <T> based on the type of data you want to store in the cache.
+- Replace 'someKey' and 42 with your actual data and keys. Adjust the generic type parameter <T> based on the type of data you want to store in the cache.
 
-- **Package Link**: [`use-lru-cache` on npm](https://www.npmjs.com/package/use-lru-cache)
-- **Contributor**: [uuvedant4](https://github.com/uuvedant4)
+**Demo**: [Demo Link](https://codesandbox.io/p/sandbox/lru-cache-visualizer-rw9rz3)
 
+**Package Link**: [`use-lru-cache` on npm](https://www.npmjs.com/package/use-lru-cache)
+
+**Contributor**: [uuvedant4](https://github.com/uuvedant4), [shrish-01](https://github.com/shrish-01)
 
