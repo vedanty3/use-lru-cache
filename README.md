@@ -2,13 +2,13 @@
 
 A React hook for managing an LRUCache (Least Recently Used Cache) in your React components.
 
-## Installation
+### Installation
 
 ```bash
 npm install use-lru-cache
 ```
 
-# Usage
+### Usage
 
 ```markdown
 import React from 'react';
