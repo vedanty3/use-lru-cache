@@ -10,7 +10,7 @@ npm install use-lru-cache
 
 ### Usage
 
-```markdown
+```typescript
 import React from 'react';
 import { useLRUCache } from 'use-lru-cache';
 
