@@ -44,7 +44,7 @@ export default MyComponent;
 
 -----------------------------------------
 
-#### **Contributors**:
-> <a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors">
+#### **Contributors**
+<a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" />
 </a>
