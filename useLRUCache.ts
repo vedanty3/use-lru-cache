@@ -1,39 +1,10 @@
 import { useRef } from "react";
 
-class ListNode<T> {
-  val: T;
-  key: string | number;
-  next: ListNode<T> | null;
-  prev: ListNode<T> | null;
-
-  constructor(key: string | number, val: T) {
-    this.val = val;
-    this.key = key;
-    this.next = null;
-    this.prev = null;
-  }
-
-  addNodeToList(head: ListNode<T>, node: ListNode<T>) {
-    let headNext = head.next as ListNode<T>;
-    node.next = headNext;
-    headNext.prev = node;
-    head.next = node;
-    node.prev = head;
-  }
-
-  deleteNodeFromList(node: ListNode<T>) {
-    let nextNode = node.next as ListNode<T>;
-    let prevNode = node.prev as ListNode<T>;
-    nextNode.prev = prevNode;
-    prevNode.next = nextNode;
-  }
-}
-
 class LRUCache<T> extends ListNode<T> {
-  cache: Record<string | number, ListNode<T>>;
-  capacity: number;
-  head: ListNode<T>;
-  tail: ListNode<T>;
+  private cache: Record<string | number, ListNode<T>>;
+  private capacity: number;
+  private head: ListNode<T>;
+  private tail: ListNode<T>;
 
   constructor(cap: number) {
     super(-1, {} as T);
@@ -45,7 +16,7 @@ class LRUCache<T> extends ListNode<T> {
     this.tail.prev = this.head;
   }
 
-  get(key: string | number) {
+  public get(key: string | number) {
     if (this.cache[key]) {
       let val = this.cache[key].val;
       this.deleteNodeFromList(this.cache[key]);
@@ -56,7 +27,7 @@ class LRUCache<T> extends ListNode<T> {
     return null;
   }
 
-  put(key: string | number, val: T) {
+  public put(key: string | number, val: T) {
     if (this.cache[key]) {
       this.deleteNodeFromList(this.cache[key]);
       this.addNodeToList(this.head, new ListNode<T>(key, val));
@@ -70,7 +41,7 @@ class LRUCache<T> extends ListNode<T> {
       this.cache[key] = this.head.next as ListNode<T>;
     }
   }
-  getCachedData(): (string | number)[] {
+  public getCachedData(): (string | number)[] {
     const arr = new Array();
     let tmp = this.head.next as ListNode<T>;
     while (tmp.next != null) {
