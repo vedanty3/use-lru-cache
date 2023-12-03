@@ -1,6 +1,6 @@
 {
   "name": "use-lru-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Optimize your React applications by effortlessly implementing Least Recently Used (LRU) caching for time-consuming API responses with the React LRUCache Hook. This lightweight and easy-to-use hook seamlessly integrates into your components, allowing you to efficiently manage and cache API data, reducing unnecessary network requests and enhancing the overall performance of your application.",
   "keywords": [
     "lru cache",
