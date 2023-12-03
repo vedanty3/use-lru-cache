@@ -40,10 +40,8 @@ export default MyComponent;
 
 *Package Link*: [`use-lru-cache` on npm](https://www.npmjs.com/package/use-lru-cache)
 
-*Contributors*:
+#### ***Contributors***:
 ---------------------
 <a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" />
 </a>
-
-Made with [contrib.rocks](https://contrib.rocks).
