@@ -1,6 +1,6 @@
 {
   "name": "use-lru-cache",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Optimize your React applications by effortlessly implementing Least Recently Used (LRU) caching for time-consuming API responses with the React LRUCache Hook. This lightweight and easy-to-use hook seamlessly integrates into your components, allowing you to efficiently manage and cache API data, reducing unnecessary network requests and enhancing the overall performance of your application.",
   "keywords": [
     "lru cache",
@@ -9,9 +9,11 @@
     "use-lru-cache",
     "javascript"
   ],
-  "main": "useLRUCache.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "publish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.40"
-  }
+    "@types/react": "^18.2.40",
+    "typescript": "^4.9.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
