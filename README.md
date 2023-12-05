@@ -38,7 +38,7 @@ export default MyComponent;
 
 -----------------------------------------
 
-**Example**: <a target=_blank href="https://use-lru-cache.vercel.app/">Link</a>
+**Example**: <a target="_blank" href="https://use-lru-cache.vercel.app/">Link</a>
 
 **Package Link**: [*use-lru-cache* on npm](https://www.npmjs.com/package/use-lru-cache)
 
