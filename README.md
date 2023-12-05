@@ -1,4 +1,4 @@
-# **useLRUCache 🪝: We are stable now**
+# **useLRUCache🪝: We are stable now**
 
 A React hook for managing an LRUCache (Least Recently Used Cache) in your React components.
 
