@@ -38,7 +38,7 @@ export default MyComponent;
 
 -----------------------------------------
 
-**CodeSandbox**: [Link](https://codesandbox.io/p/sandbox/lru-cache-visualizer-rw9rz3)
+**Example**: [Link](https://use-lru-cache.vercel.app/)
 
 **Package Link**: [`use-lru-cache` on npm](https://www.npmjs.com/package/use-lru-cache)
 
