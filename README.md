@@ -46,6 +46,6 @@ export default MyComponent;
 
 <div style="text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); display: inline-block;">
   <a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors" style="text-decoration: none;">
-    <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+    <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" style="width: 50px; height: auto; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
   </a>
 </div>
