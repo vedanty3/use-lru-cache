@@ -1,4 +1,4 @@
-## *useLRUCache🪝: We are stable now 😃*
+## \***\*useLRUCache🪝\*\***
 
 A React hook for managing an LRUCache (Least Recently Used Cache) in your React components.
 
@@ -11,17 +11,19 @@ npm install use-lru-cache
 ### Usage
 
 ```typescript
-import React from 'react';
-import { useLRUCache } from 'use-lru-cache';
+import React from "react";
+import { useLRUCache } from "use-lru-cache";
 
-const MyComponent: React.FC = () => {
+type T = number;
+
+const App: React.FC = () => {
   // Initialize an LRUCache with a capacity of 10 for numbers
-  const cache = useLRUCache<number>(10);
+  // It will hold a value of type number against keys
+  const { get, put, getCachedData, clearCache } = useLRUCache<T>(10);
 
-  // Use the cache methods
-  const cachedValue = cache.get('someKey');
-  cache.put('someKey', 42);
-  const cachedKeys = cache.getCachedData();
+  const cachedValue = get("someKey"); // returns corresponding value if key is present else null.
+  put("someKey", 42); // set key as "someKey" and corresponding value will be 42
+  const cachedKeys = getCachedData(); // will return an array of all present keys
 
   return (
     <div>
@@ -34,17 +36,16 @@ const MyComponent: React.FC = () => {
 export default MyComponent;
 ```
 
-> ***Note: Replace `someKey` and `42` with your actual data and keys. Adjust the generic type parameter <T> based on the type of data you want to store in the cache.***
+> _Note: Replace `someKey` and `42` with your actual key and data. Adjust the generic type parameter <T> based on the type of data you want to store in the cache corresponding to your key. A key can be a number or string._
 
------------------------------------------
+###### _Example: [use-lru-cache.vercel.app](https://use-lru-cache.vercel.app)_
 
-**Example**: <a target="_blank" href="https://use-lru-cache.vercel.app/">Link</a>
+###### _Checkout `use-lru-cache` on [npm](https://www.npmjs.com/package/use-lru-cache)_
 
-**Package Link**: [*use-lru-cache* on npm](https://www.npmjs.com/package/use-lru-cache)
+###### _Contributors_
 
------------------------------------------
-
-#### **Contributors**
-<a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" />
-</a>
+<div style="text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); display: inline-block;">
+  <a href="https://github.com/uuvedant4/use-lru-cache/graphs/contributors" style="text-decoration: none;">
+    <img src="https://contrib.rocks/image?repo=uuvedant4/use-lru-cache" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+  </a>
+</div>

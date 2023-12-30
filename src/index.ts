@@ -79,6 +79,15 @@ class LRUCache<T> extends ListNode<T> {
     }
     return arr;
   }
+  clearCache(): void {
+    for (const key in this.cache) {
+      delete this.cache[key];
+    }
+    this.head = new ListNode<T>(-1, {} as T);
+    this.tail = new ListNode<T>(-1, {} as T);
+    this.head.next = this.tail;
+    this.tail.prev = this.head;
+  }
 }
 
 export const useLRUCache = <T>(cap: number) => {
@@ -87,5 +96,6 @@ export const useLRUCache = <T>(cap: number) => {
     get: (key: string | number): T | null => lruRef.current.get(key),
     put: (key: string | number, val: T): void => lruRef.current.put(key, val),
     getCachedData: (): (string | number)[] => lruRef.current.getCachedData(),
+    clearCache: (): void => lruRef.current.clearCache(),
   };
 };
