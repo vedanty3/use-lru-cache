@@ -33,7 +33,7 @@ const App: React.FC = () => {
   );
 };
 
-export default MyComponent;
+export default App;
 ```
 
 > _Note: Replace `someKey` and `42` with your actual key and data. Adjust the generic type parameter <T> based on the type of data you want to store in the cache corresponding to your key. A key can be a number or string._
